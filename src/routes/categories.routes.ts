@@ -19,7 +19,7 @@ categoriesRoutes.post("/", (req: Request, res: Response) => {
 
   categoriesRepository.create(category)
 
-  return res.status(201).json(category)
+  return res.status(201).send()
 })
 
 export { categoriesRoutes }
